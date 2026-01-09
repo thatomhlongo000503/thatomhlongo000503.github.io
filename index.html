@@ -23,22 +23,6 @@
             --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
 
-        .profile-pic-container {
-    width: 160px;
-    height: 160px;
-    margin: 0 auto 1.5rem;
-    border-radius: 50%;
-    border: 5px solid white;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.profile-pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
         body {
             background-color: #f1f5f9;
             color: var(--dark);
@@ -52,6 +36,29 @@
             padding: 2rem 1rem;
             text-align: center;
             box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .profile-pic-container {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            border: 5px solid white;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background-color: #e2e8f0; /* Light gray background if image fails */
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .header-content h1 {
@@ -217,6 +224,11 @@
                 font-size: 2.2rem;
             }
 
+            .profile-pic-container {
+                width: 140px;
+                height: 140px;
+            }
+
             .contact-bar {
                 flex-direction: column;
                 align-items: center;
@@ -235,39 +247,43 @@
 </head>
 <body>
     <!-- Header -->
-   <!-- In the HEADER section, replace the current header content starting from line ~63 with: -->
-
-<header>
-    <div class="header-content">
-        <!-- Profile Picture Container -->
-        <div class="profile-pic-container">
-            <img src="https://thatomhlongo000503.github.io/ChatGPT Image Jan 7, 2026, 11_50_04 AM.png" alt="Thato Mhlongo Profile Picture" class="profile-pic">
+    <header>
+        <div class="header-content">
+            <!-- PROFILE PICTURE - OPTION 2 (Original filename with encoded spaces) -->
+            <div class="profile-pic-container">
+                <img src="ChatGPT%20Image%20Jan%207,%202026,%2011_50_04%20AM.png" 
+                     alt="Thato Mhlongo Profile Picture" 
+                     class="profile-pic">
+            </div>
+            
+            <h1>Thato Mhlongo</h1>
+            <p>Detail-Oriented Software Developer | Focused on Clean Code, Problem-Solving & Continuous Learning</p>
+            <p>Seeking Internship/Junior Roles in Full-Stack Development, AI Support, or Software QA</p>
+            
+            <div class="contact-bar">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Johannesburg, Gauteng</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(074) 796 0911</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>thatomhlongo000503@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/thato-mhlongo</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/thatomhlongo000503</span>
+                </div>
+            </div>
         </div>
-        
-        <h1>Thato Mhlongo</h1>
-        <p>Detail-Oriented Software Developer | Focused on Clean Code, Problem-Solving & Continuous Learning</p>
-        <p>Seeking Internship/Junior Roles in Full-Stack Development, AI Support, or Soft.ware QA</p>
-        
-        <div class="contact-bar">
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Johannesburg, Gauteng</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>(074) 796 0911</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>thatomhlongo000503@gmail.com</span>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-github"></i>
-                <span>github.com/thatomhlongo000503</span>
-            </div>
-        </div>
-    </div>
-</header>
+    </header>
 
     <!-- About -->
     <section id="about">
@@ -380,9 +396,9 @@
         
         <div class="social-links">
             <a href="https://github.com/thatomhlongo000503" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/thato-mhlongo-336964349" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:thatomhlongo000503@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="tel:+27747960911"><i class="fas fa-phone"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a> <!-- Add your LinkedIn if available -->
         </div>
 
         <p>&copy; 2024 Thato Mhlongo. All rights reserved.</p>
@@ -390,5 +406,4 @@
     </footer>
 
 </body>
-
 </html>
